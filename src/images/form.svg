@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="729px" height="484px" viewBox="0 0 729 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Comparison - Contact firm - Static</title>
+    <defs>
+        <path d="M8,0 L720,0 C724.418278,-8.11624501e-16 728,3.581722 728,8 L728,476 C728,480.418278 724.418278,484 720,484 L8,484 C3.581722,484 5.41083001e-16,480.418278 0,476 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="path-1"></path>
+        <filter x="-8.8%" y="-11.6%" width="117.6%" height="126.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Comparison---Contact-firm---Static" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <g id="Header" mask="url(#mask-2)">
+            <g>
+                <path d="M8,0 L720,0 C724.418278,-8.11624501e-16 728,3.581722 728,8 L728,28 L728,28 L0,28 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Bg" fill="#D9DFEC"></path>
+                <path d="M14,10 C16.209139,10 18,11.790861 18,14 C18,16.209139 16.209139,18 14,18 C11.790861,18 10,16.209139 10,14 C10,11.790861 11.790861,10 14,10 Z M28,10 C30.209139,10 32,11.790861 32,14 C32,16.209139 30.209139,18 28,18 C25.790861,18 24,16.209139 24,14 C24,11.790861 25.790861,10 28,10 Z M42,10 C44.209139,10 46,11.790861 46,14 C46,16.209139 44.209139,18 42,18 C39.790861,18 38,16.209139 38,14 C38,11.790861 39.790861,10 42,10 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+        <g id="Group-2" mask="url(#mask-2)">
+            <g transform="translate(184.000000, 80.000000)">
+                <rect id="Rectangle-Copy-16" fill="#EBEFF9" x="0" y="28" width="280" height="4" rx="2"></rect>
+                <rect id="Rectangle-Copy-17" fill="#EBEFF9" x="0" y="44" width="285" height="4" rx="2"></rect>
+                <rect id="Rectangle-Copy-25" fill="#D9DFEC" x="0" y="0" width="150" height="10" rx="5"></rect>
+                <g id="input" stroke-width="1" fill="none" transform="translate(0.000000, 88.000000)">
+                    <rect id="Text-field" fill="#F6F8FD" x="0" y="16" width="360" height="36" rx="6"></rect>
+                    <path d="M3,0 L77,0 C78.6568542,-3.04359188e-16 80,1.34314575 80,3 C80,4.65685425 78.6568542,6 77,6 L3,6 C1.34314575,6 2.02906125e-16,4.65685425 0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle-Copy-16" fill="#D9DFEC"></path>
+                </g>
+                <g id="input-copy" stroke-width="1" fill="none" transform="translate(0.000000, 168.000000)">
+                    <rect id="Text-field" fill="#F6F8FD" x="0" y="16" width="360" height="36" rx="6"></rect>
+                    <path d="M3,0 L93,0 C94.6568542,-3.04359188e-16 96,1.34314575 96,3 C96,4.65685425 94.6568542,6 93,6 L3,6 C1.34314575,6 2.02906125e-16,4.65685425 0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle-Copy-16" fill="#D9DFEC"></path>
+                </g>
+                <g id="input-copy-2" stroke-width="1" fill="none" transform="translate(0.000000, 248.000000)">
+                    <rect id="Text-field" fill="#F6F8FD" x="0" y="16" width="360" height="36" rx="6"></rect>
+                    <path d="M3,0 L77,0 C78.6568542,-3.04359188e-16 80,1.34314575 80,3 C80,4.65685425 78.6568542,6 77,6 L3,6 C1.34314575,6 2.02906125e-16,4.65685425 0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle-Copy-16" fill="#D9DFEC"></path>
+                </g>
+                <g id="input-copy-3" stroke-width="1" fill="none" transform="translate(0.000000, 328.000000)">
+                    <rect id="Text-field" fill="#F6F8FD" x="0" y="16" width="165" height="36" rx="6"></rect>
+                    <path d="M3,0 L89,0 C90.6568542,-3.04359188e-16 92,1.34314575 92,3 C92,4.65685425 90.6568542,6 89,6 L3,6 C1.34314575,6 2.02906125e-16,4.65685425 0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle-Copy-16" fill="#D9DFEC"></path>
+                </g>
+                <g id="input-copy-4" stroke-width="1" fill="none" transform="translate(195.000000, 328.000000)">
+                    <rect id="Text-field" fill="#F6F8FD" x="0" y="16" width="165" height="36" rx="6"></rect>
+                    <path d="M3,0 L66,0 C67.6568542,-3.04359188e-16 69,1.34314575 69,3 C69,4.65685425 67.6568542,6 66,6 L3,6 C1.34314575,6 -3.79389676e-15,4.65685425 0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle-Copy-16" fill="#D9DFEC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

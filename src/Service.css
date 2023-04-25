@@ -1,0 +1,7 @@
+h1 {
+    font-size: 2rem; /* set font size for the heading */
+    font-weight: bold;
+    color: #007bff; /* set font color for the heading */
+    text-align: center; /* center align the heading */
+    margin-top: 50px; /* add some top margin */
+}
