@@ -9,27 +9,39 @@ const Sdata = [
     {
         imgsrc: form1,
         title: "1",
+        navigate: "/template",
+        topic:"Economic Survey",
     },
     {
         imgsrc: form2,
         title: "2",
+        navigate: "/template2",
+        topic:"Mental Health Survey",
     },
     {
         imgsrc: form3,
         title: "3",
+        navigate: "/template3",
+        topic:"Thoughts Survey",
     },
     {
         imgsrc: form4,
         title: "4",
+        navigate: "/dragdrop",
+        topic:"Coming soon",
     },
     {
         imgsrc: form5,
         title: "5",
+        navigate: "/template",
+        topic:"Coming soon",
     },
 
     {
         imgsrc: form6,
         title: "6",
+        navigate: "/template",
+        topic:"Coming Soon",
     },
 ];
 

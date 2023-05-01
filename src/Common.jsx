@@ -14,7 +14,10 @@ const Common = (props) => {
                                     {props.name}
                                 </h1>
                                 <h2 className="my-3">
-                                    Have faith and believe in us!
+                                DataQuest is a user-friendly, web-based platform for creating and customizing
+                                 surveys, collecting real-time responses, and analyzing data with visual aids. 
+                                 With a focus on flexibility and ease of use, it can be a valuable tool for 
+                                 gathering information for market research, customer feedback, or academic research purposes.
                                 </h2>
                                 <div className="mt-3">
                                     <NavLink to={props.visit} className="btn-get-started"> 

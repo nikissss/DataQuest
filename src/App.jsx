@@ -6,6 +6,7 @@ import About from "./About";
 import Service from "./Service";
 import Login from "./Login";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Route, Navigate, Routes} from "react-router-dom";
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
             <Route exact path="/service" component={Service} />
             <Route exact path="/login" component={Login} />
             <Route path="*" element={<Navigate to ="/"/>}/>
-         </Routes>
+        </Routes>
+        <Footer />
         </>
     );
 };

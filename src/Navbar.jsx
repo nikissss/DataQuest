@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import web from "../src/images/logo.png";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,10 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
-                  DataQuest
+                  {/* DataQuest */}
+                  <div className="col-lg-2 order-1 order-lg-2 header-img">
+                                <img src={web} className="img-fluid animated" alt="logo"/>
+                            </div>
                 </NavLink>
                 <button
                   className="navbar-toggler"

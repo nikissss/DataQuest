@@ -19,7 +19,7 @@ const Home = () => {
                                     Maximize Insights!
                                 </h2>
                                 <div className="mt-3">
-                                    <NavLink to="/services" className="btn-get-started"> 
+                                    <NavLink to="/service" className="btn-get-started"> 
                                     Get Started 
                                     </NavLink>
                                 </div>

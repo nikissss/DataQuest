@@ -6,6 +6,11 @@ import About from "./About";
 import Service from "./Service";
 import Login from "./Login";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Template from "./Template";
+import Template2 from "./Template2";
+import Template3 from "./Template3";
+import DragDrop from "./DragDrop";
 import { Route, Navigate, Routes} from "react-router-dom";
 
 const App = () => {
@@ -18,7 +23,12 @@ const App = () => {
             <Route path="/service" Component={Service} />
             <Route path="/login" Component={Login} />
             <Route path="*" element={<Navigate to ="/"/>}/>
+            <Route exact path="/template" Component={Template}/>
+            <Route exact path="/template2" Component={Template2}/>
+            <Route exact path="/template3" Component={Template3}/>
+            <Route exact path="/dragdrop" Component={DragDrop}/>
          </Routes>
+        <Footer/>
         </>
     );
 };

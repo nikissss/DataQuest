@@ -17,6 +17,8 @@ const Service = () => {
                                         return <Card key={ind}
                                         imgsrc={val.imgsrc}
                                         title={val.title}
+                                        navigate={val.navigate}
+                                        topic={val.topic}
                                         />
                                     })
                                 }

@@ -6,8 +6,8 @@ const About = () => {
     return(
         <>  
             <Common 
-                name="Welcome to About Page" 
-                imgsrc={web} visit="/contact" 
+                name="About Us" 
+                imgsrc={web} visit="/login" 
                 btname="Contact Now"
             />
         </>
