@@ -12,6 +12,7 @@ import Template2 from "./Template2";
 import Template3 from "./Template3";
 import DragDrop from "./DragDrop";
 import { Route, Navigate, Routes} from "react-router-dom";
+import Registration from "./Registration";
 
 const App = () => {
     return(
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/about" Component={About} />
             <Route path="/service" Component={Service} />
             <Route path="/login" Component={Login} />
+            <Route path="/registration" Component={Registration} />
             <Route path="*" element={<Navigate to ="/"/>}/>
             <Route exact path="/template" Component={Template}/>
             <Route exact path="/template2" Component={Template2}/>

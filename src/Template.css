@@ -27,7 +27,7 @@ body::before{
     z-index:-1;
     background: #C9A7EB;
     /* var(--color-darkblue); */
-    background-image: linear-gradient(215deg,rgba(75,113,179,0.😎,rgba(124,192,147,0.😎,url("C:\Users\nikki\reactapp\src\images\form.svg"))));
+    background-image: linear-gradient(215deg,rgba(75,113,179,0.😎,rgba(124,192,147,0.😎,url("../src/images/form.svg"))));
 background-size:cover;
 background-repeat: no-repeat;
 background-position: center;
