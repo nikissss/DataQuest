@@ -13,7 +13,7 @@ const Navbar = () => {
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
                   {/* DataQuest */}
-                  <div className="col-lg-2 order-1 order-lg-2 header-img">
+                  <div className="col-lg-.5 order-1 order-lg-2 header-img">
                                 <img src={web} className="img-fluid animated" alt="logo"/>
                             </div>
                 </NavLink>
@@ -70,7 +70,7 @@ const Navbar = () => {
                         activeclassname="menu_active"
                         to="/registration"
                       >
-                        Sign Up
+                        Log In
                       </NavLink>
                     </li>
                   </ul>

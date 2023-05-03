@@ -42,6 +42,7 @@ const User = mongoose.model("User", userSchema);
 app.post("/api/signup", (req, res) => {
   const { fullname, phone, email, password } = req.body;
 
+
   // create a new user object
   const newUser = new User({
     fullname,
@@ -61,6 +62,25 @@ app.post("/api/signup", (req, res) => {
   });
 });
 
+app.post("/api/login", (req, res) => {
+  const { email, password } = req.body;
+
+  // find the user by email and password in the database
+  User.findOne({ email, password })
+    .then((user) => {
+      if (!user) {
+        // user not found, return error response
+        return res.status(401).send("Invalid email or password");
+      }
+
+      // user found, return success response
+      res.send(" login vayobabu");
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send("Error finding user");
+    });
+});
 
 app.listen(port, () => {
     connect();

@@ -22,25 +22,25 @@ const Sdata = [
         imgsrc: form3,
         title: "3",
         navigate: "/template3",
-        topic:"Thoughts Survey",
+        topic:"Thoughts on Coding Survey",
     },
     {
         imgsrc: form4,
         title: "4",
-        navigate: "/dragdrop",
-        topic:"Coming soon",
+        navigate: "/template4",
+        topic:"Customer Satisfaction Survey",
     },
     {
         imgsrc: form5,
         title: "5",
-        navigate: "/template",
-        topic:"Coming soon",
+        navigate: "/template5",
+        topic:"Education Survey",
     },
 
     {
         imgsrc: form6,
         title: "6",
-        navigate: "/template",
+        navigate: "/dragdrop",
         topic:"Coming Soon",
     },
 ];

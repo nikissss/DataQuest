@@ -11,6 +11,8 @@ import Template from "./Template";
 import Template2 from "./Template2";
 import Template3 from "./Template3";
 import DragDrop from "./DragDrop";
+import Template4 from "./Template4";
+import Template5 from "./Template5";
 import { Route, Navigate, Routes} from "react-router-dom";
 import Registration from "./Registration";
 
@@ -28,6 +30,8 @@ const App = () => {
             <Route exact path="/template" Component={Template}/>
             <Route exact path="/template2" Component={Template2}/>
             <Route exact path="/template3" Component={Template3}/>
+            <Route exact path="/template4" Component={Template4}/>
+            <Route exact path="/template5" Component={Template5}/>
             <Route exact path="/dragdrop" Component={DragDrop}/>
          </Routes>
         <Footer/>
