@@ -91,7 +91,7 @@ const Signup = () => {
                 <label htmlFor="password" className="form-label">
                   Password
                 </label>
-                <input
+                <input 
                   type="password"
                   className="form-control"
                   id="password"

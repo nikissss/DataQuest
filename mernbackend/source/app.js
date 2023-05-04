@@ -85,12 +85,55 @@ app.post("/api/login", (req, res) => {
 });
 
 
+//new Schema for template1
+const temp1Schema = new mongoose.Schema({
+  name:String,
+    nooffamily:String,
+    sourceofincome:String,
+    employmentStatus:String,
+    monthlyIncome:String,
+    changesinincome:String,
+    sacrifice:String,
+    confidence:String,  
+});
 
+// create a model for the template1 data
+const temp1 = mongoose.model("temp1", temp1Schema);
 
+// handle POST requests to /submit-from1
+app.post('/submit-form1', (req, res) => {
+  const name = req.body.name;
+  const nooffamily = req.body.family;
+  const sourceofincome = req.body.source;
+  const employmentStatus = req.body.employment;
+  const monthlyIncome = req.body.income;
+  const changesinincome= req.body.changes;
+  const sacrifice= req.body.sacrifice;
+  const confidence= req.body.confidence;
 
+  res.send('Form submitted successfully');
+  // create a new temp1 object
+  const newTemp1 = new temp1({
+    name,
+    nooffamily,
+    sourceofincome,
+    employmentStatus,
+    monthlyIncome,
+    changesinincome,
+    sacrifice,
+    confidence,
+ });
 
-
-
+ // save the new temp1 object to the database
+  newTemp1.save()
+  .then(() => {
+    res.send("Form submitted successfully");
+  })
+  .catch((err) => {
+    console.log(err);
+    res.status(500).send("Error submitting form");
+  });
+});
 
 
 

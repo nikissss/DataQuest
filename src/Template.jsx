@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useState} from "react";
+import axios from "axios";
  import "./Template.css";
  import {
   FacebookShareButton,
@@ -9,6 +10,42 @@ import React from "react";
 
 const Template = () => {
    
+  const [data, setData] = useState({
+    name:"",
+    nooffamily:"",
+    sourceofincome:"",
+    employmentStatus:"",
+    monthlyIncome:"",
+    changesinincome:"",
+    sacrifice:"",
+    confidence:"",
+  }); 
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setData((prevData) => {
+      return {
+        ...prevData,
+        [name]: value,
+      };
+    });
+  }; 
+
+  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios.post("http://localhost:5000/submit-form1", data)
+      .then(response => {
+        console.log(response.data);
+        alert("Form Submitted");
+      })
+      .catch(error => {
+        console.log(error);
+        alert("Form submission failed.");
+      });
+  };
+
+  
   const shareUrl="http://youtube.com";
   return (
     <>
@@ -22,13 +59,15 @@ const Template = () => {
             Economic Condition
           </p>
         </header>
-        <form action="" id="surveyform">
+        <form onSubmit={handleSubmit} action="" id="surveyform">
 
           <div className="formgroup">
             <label for="name">Name</label>
             <input type="text"
               name="name" id="name"
               class="formcontrol"
+              value={data.name}
+              onChange={handleInputChange}
               placeholder="enter your name" required />
           </div>
 
@@ -36,6 +75,8 @@ const Template = () => {
             <label for="number">Number of family members</label>
             <input type="number"
               name="family" id="family"
+              value={data.family}
+             onChange={handleInputChange}
               class="formcontrol"
               placeholder="enter  number"
               required />
@@ -45,7 +86,9 @@ const Template = () => {
           <div className="formgroup">
             <label for="text">Source of income</label>
             <input type="text"
-              name="income" id="source"
+              name="source" id="source"
+              value={data.source}
+              onChange={handleInputChange}
               class="formcontrol"
               placeholder="enter your income source" required />
           </div>
@@ -66,35 +109,40 @@ const Template = () => {
             <label for="">
               <input type="radio"
                 name="employment"
-                value="full"
+                value={data.employment}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check required/>Employed full-time
             </label>
             <label for="">
               <input type="radio"
                 name="employment"
-                value="part"
+                value={data.employment}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Employed part-time
             </label>
             <label for="">
               <input type="radio"
                 name="employment"
-                value="self"
+                value={data.employment}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check/>Self Employed
             </label>
             <label for="">
               <input type="radio"
                 name="employment"
-                value="unemployed"
+                value={data.employment}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Unemployed, actively looking for work
             </label>
             <label for="">
               <input type="radio"
                 name="employment"
-                value="bom"
+                value={data.employment}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Unemployed, not currently looking for work
             </label>
@@ -105,35 +153,40 @@ const Template = () => {
             <label for="">
               <input type="radio"
                 name="income"
-                value="less"
+                value={data.income}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check required/>Less than Rs. 20,000
             </label>
             <label for="">
               <input type="radio"
                 name="income"
-                value="bet"
+                value={data.income}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Rs. 20,000 - Rs 40,000
             </label>
             <label for="">
               <input type="radio"
                 name="income"
-                value="more"
+                value={data.income}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check/>Rs. 40,000 - Rs. 60,000
             </label>
             <label for="">
               <input type="radio"
                 name="income"
-                value="morest"
+                value={data.income}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Rs. 60,000 - Rs. 80,000
             </label>
             <label for="">
               <input type="radio"
                 name="income"
-                value="moreeee"
+                value={data.income}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Rs. 80,000 or more
             </label>
@@ -144,35 +197,40 @@ const Template = () => {
             <label for="">
               <input type="radio"
                 name="changes"
-                value="slight"
+                value={data.changes}
+                onChange={handleInputChange} 
                 class="inputRadio"
                 check required />Slight improvement
             </label>
             <label for="">
               <input type="radio"
                 name="changes"
-                value="significant"
+                value={data.changes}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Significant improvement
             </label>
             <label for="">
               <input type="radio"
                 name="changes"
-                value="slightd"
+                value={data.changes}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check/>Slight decline
             </label>
             <label for="">
               <input type="radio"
                 name="changes"
-                value="moderate"
+                value={data.changes}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Moderate decline
             </label>
             <label for="">
               <input type="radio"
                 name="changes"
-                value="significantd"
+                value={data.changes}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Significant decline
             </label>
@@ -183,28 +241,32 @@ const Template = () => {
             <label for="">
               <input type="radio"
                 name="sacrifice"
-                value="no"
+                value={data.sacrifice}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check required/>No, I have not had to make any significant financial sacrifices
             </label>
             <label for="">
               <input type="radio"
                 name="sacrifice"
-                value="yes"
+                value={data.sacrifice}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Yes, I have had to cut back on discretionary spending
             </label>
             <label for="">
               <input type="radio"
                 name="sacrifice"
-                value="yesmajor"
+                value={data.sacrifice}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check/>Yes, I have had to postpone major purchases or investments
             </label>
             <label for="">
               <input type="radio"
                 name="sacrifice"
-                value="yesyes"
+                value={data.sacrifice}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Yes, I have had to dip into savings or take on debt to make ends meet
             </label>
@@ -215,35 +277,40 @@ const Template = () => {
             <label for="">
               <input type="radio"
                 name="confidence"
-                value="very"
+                value={data.confidence}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check required/>Very confident
             </label>
             <label for="">
               <input type="radio"
                 name="confidence"
-                value="somewhat"
+                value={data.confidence}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Somewhat confident
             </label>
             <label for="">
               <input type="radio"
                 name="confidence"
-                value="neutral"
+                value={data.confidence}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check/>Neutral
             </label>
             <label for="">
               <input type="radio"
                 name="confidence"
-                value="suncertain"
+                value={data.confidence}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Somewhat uncertain
             </label>
             <label for="">
               <input type="radio"
                 name="confidence"
-                value="vuncertain"
+                value={data.confidence}
+                onChange={handleInputChange}
                 class="inputRadio"
                 check />Very Uncertain
             </label>

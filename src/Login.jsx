@@ -16,7 +16,7 @@ const Login = () => {
         [name]: value,
       };
     });
-  };
+  }; 
 
   const handleSubmit = (event) => {
     event.preventDefault();
