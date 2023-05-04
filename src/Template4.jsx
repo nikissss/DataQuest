@@ -43,36 +43,36 @@ const Template4 = () => {
             <p id="quest">How satisfied are you with our product/service?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="satisfied"
+                value="very"
                 class="inputRadio"
-                check />Very satisfied
+                check required/>Very satisfied
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="satisfied"
+                value="mid"
                 class="inputRadio"
                 check />Satisfied
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="satisfied"
+                value="neutral"
                 class="inputRadio"
                 check/>Neutral
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="satisfied"
+                value="diss"
                 class="inputRadio"
                 check />Dissatisfied
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="satisfied"
+                value="noo"
                 class="inputRadio"
                 check />Very Dissatisfied
             </label>
@@ -82,37 +82,37 @@ const Template4 = () => {
             <p id="quest">How likely are you to recommend our product/service to others?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="recommend"
+                value="very"
                 class="inputRadio"
-                check />Very Likely
+                check required/>Very Likely
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="recommend"
+                value="likely"
                 class="inputRadio"
                 check />Likely
 
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="recommend"
+                value="neutral"
                 class="inputRadio"
                 check/>Neutral
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="recommend"
+                value="unlikely"
                 class="inputRadio"
                 check />Unlikely
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="recommend"
+                value="veryun"
                 class="inputRadio"
                 check />Very unlikely
             </label>
@@ -122,36 +122,36 @@ const Template4 = () => {
             <p id="quest">How would you rate the quality of our product/service?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="rate1"
+                value="exce"
                 class="inputRadio"
-                check />Excellent
+                check required />Excellent
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="rate1"
+                value="good"
                 class="inputRadio"
                 check />Good
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="rate1"
+                value="avg"
                 class="inputRadio"
                 check/>Average
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="rate1"
+                value="poor"
                 class="inputRadio"
                 check />Poor
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="rate1"
+                value="very"
                 class="inputRadio"
                 check />Very poor
             </label>
@@ -161,36 +161,36 @@ const Template4 = () => {
             <p id="quest">How would you rate the value for money of our product/service?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="rate2"
+                value="exce"
                 class="inputRadio"
-                check />Excellent
+                check required/>Excellent
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="rate2"
+                value="good"
                 class="inputRadio"
                 check />Good
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="rate2"
+                value="avg"
                 class="inputRadio"
                 check/>Average
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="rate2"
+                value="poor"
                 class="inputRadio"
                 check />Poor
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="rate2"
+                value="very"
                 class="inputRadio"
                 check />Very poor
             </label>
@@ -200,36 +200,36 @@ const Template4 = () => {
             <p id="quest">How would you rate the overall customer service exxperience?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="rate3"
+                value="exce"
                 class="inputRadio"
-                check />Excellent
+                check required/>Excellent
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="rate3"
+                value="good"
                 class="inputRadio"
                 check />Good
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="rate3"
+                value="avg"
                 class="inputRadio"
                 check/>Average
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="rate3"
+                value="poor"
                 class="inputRadio"
                 check />Poor
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="rate3"
+                value="very"
                 class="inputRadio"
                 check />Very poor
             </label>
@@ -240,37 +240,37 @@ const Template4 = () => {
             <p id="quest">How likely are you to purchase from us again?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="likely"
+                value="very"
                 class="inputRadio"
-                check />Very Likely
+                check required/>Very Likely
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="likely"
+                value="mid"
                 class="inputRadio"
                 check />Likely
 
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="likely"
+                value="neutral"
                 class="inputRadio"
                 check/>Neutral
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="likely"
+                value="unlikely"
                 class="inputRadio"
                 check />Unlikely
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="likely"
+                value="veryun"
                 class="inputRadio"
                 check />Very unlikely
             </label>

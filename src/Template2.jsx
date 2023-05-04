@@ -38,23 +38,7 @@ const Template2 =() =>{
                 class="formcontrol"
                 placeholder="Enter your email" required />
             </div>
-            {/* <div className="formgroup">
-                <label for="number">Phone Number</label>
-                <input type="number"
-                name="phone" id="phone"
-                class="formcontrol"
-                placeholder="Enter your phone number" 
-                 required />
-            </div>
-            <div className="formgroup">
-                <label for="address" >Address</label>
-                    {/* <span className="clue" >(optional)</span> */}
-                
-                {/* <input type="text"
-                name="address" id="address"
-                class="formcontrol"
-                placeholder="Enter your address" required />
-            </div>  */}
+            
             <div class="formgroup">
                 <p id="quest">Which of these do you experience most?</p>
                 <select name="role" id="dropdown" class="formcontrol" required >
@@ -74,7 +58,7 @@ const Template2 =() =>{
                 name="source"
                 value="friends"
                 class="inputRadio"
-                check />friends
+                check required/>friends
               </label>
               <label for="">
                 <input type="radio"
@@ -104,6 +88,7 @@ const Template2 =() =>{
                 class="inputRadio"
                 check />Other
               </label>
+              
             </div>
 
 
@@ -112,21 +97,21 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="prefer"
-                    value="back-end-dev"
+                    value="consultation"
                     class="inputRadio"
-                    check />Consultation
+                    check required/>Consultation
                   </label>
                   <label for="">
                     <input type="radio"
                     name="prefer"
-                    value="front-end-dev"
+                    value="therapy"
                     class="inputRadio"
                     check />Therapy
                   </label>
                   <label for="">
                     <input type="radio"
                     name="prefer"
-                    value="app-dev"
+                    value="medication"
                     class="inputRadio"
                     check />Medication
                   </label>
@@ -143,36 +128,36 @@ const Template2 =() =>{
                 <p id="quest">How often have you experienced feelings of sadness or hopelessness in the past month?</p>
                 <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="feelings"
+                    value="null"
                     class="inputRadio"
-                    check />Not at all
+                    check required/>Not at all
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="feelings"
+                    value="rarely"
                     class="inputRadio"
                     check />Rarely
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="feelings"
+                    value="occasionally"
                     class="inputRadio"
                     check />Occasionally
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="feelings"
+                    value="frequently"
                     class="inputRadio"
                     check />Frequently
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="other"
+                    name="feelings"
+                    value="almost"
                     class="inputRadio"
                     check />Almost constantly
                   </label>
@@ -182,29 +167,29 @@ const Template2 =() =>{
                 <p id="quest">Have you experienced any changes in appetite or sleep patterns recently?</p>
                 <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="changes"
+                    value="no"
                     class="inputRadio"
-                    check />No changes
+                    check required/>No changes
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="changes"
+                    value="alikati"
                     class="inputRadio"
                     check />Slight changes
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="changes"
+                    value="halka"
                     class="inputRadio"
                     check />Moderate changes
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="changes"
+                    value="derai"
                     class="inputRadio"
                     check />Significant Changes
                   </label>
@@ -214,29 +199,29 @@ const Template2 =() =>{
                 <p id="quest">Have you ever had an panic attack or felt overwhelmed by anxiety?</p>
                 <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="panic"
+                    value="chaina"
                     class="inputRadio"
-                    check />No, never
+                    check required/>No, never
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="panic"
+                    value="ekchati"
                     class="inputRadio"
                     check />Yes, but only once
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="panic"
+                    value="kailekai"
                     class="inputRadio"
                     check />Yes, a few times
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="panic"
+                    value="derai"
                     class="inputRadio"
                     check />Yes, frequently
                   </label>
@@ -246,29 +231,29 @@ const Template2 =() =>{
                 <p id="quest">Have you ever had suicidal thoughts or made attempts to harm yourself?</p>
                 <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="suicidal"
+                    value="no"
                     class="inputRadio"
-                    check />No, never
+                    check required/>No, never
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="suicidal"
+                    value="ekchati"
                     class="inputRadio"
                     check />Yes, but only once
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="suicidal"
+                    value="kailekai"
                     class="inputRadio"
                     check />Yes, a few times
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="suicidal"
+                    value="derai"
                     class="inputRadio"
                     check />Yes, frequently
                   </label>
@@ -278,29 +263,29 @@ const Template2 =() =>{
                 <p id="quest">Do you have a support system of family or friends that you feel comfortable talking to about your mental health?</p>
                 <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="support"
+                    value="no"
                     class="inputRadio"
-                    check />No, I don't have a support system
+                    check required/>No, I don't have a support system
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="support"
+                    value="yesnocomfy"
                     class="inputRadio"
                     check />Yes, but I don't feel comfortable talking to them
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="support"
+                    value="yesalilcomfy"
                     class="inputRadio"
                     check />Yes, and I feel somewhat comfortable talking to them
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="support"
+                    value="yescomfy"
                     class="inputRadio"
                     check />Yes, and I feel very comfortable talking to them
                   </label>
@@ -310,36 +295,36 @@ const Template2 =() =>{
                 <p id="quest">Have you ever sought professional help for mental health concerns?</p>
                 <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="professional"
+                    value="no"
                     class="inputRadio"
-                    check />Not at all
+                    check required/>Not at all
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="professional"
+                    value="rarely"
                     class="inputRadio"
                     check />Rarely
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="professional"
+                    value="occasionally"
                     class="inputRadio"
                     check />Occasionally
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="app-dev"
+                    name="professional"
+                    value="frequently"
                     class="inputRadio"
                     check />Frequently
                   </label>
                   <label for="">
                     <input type="radio"
-                    name="prefer"
-                    value="other"
+                    name="professional"
+                    value="constant"
                     class="inputRadio"
                     check />Almost constantly
                   </label>

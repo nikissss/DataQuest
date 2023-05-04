@@ -6,7 +6,7 @@ const Login = () => {
   const [data, setData] = useState({
     email: "",
     password: "",
-  });
+  }); 
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;

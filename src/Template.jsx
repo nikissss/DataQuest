@@ -8,10 +8,11 @@ import React from "react";
 } from "react-share";
 
 const Template = () => {
+   
   const shareUrl="http://youtube.com";
   return (
     <>
-
+ 
       <div className="container">
         <header class="header">
           <h1 id="title">
@@ -39,6 +40,8 @@ const Template = () => {
               placeholder="enter  number"
               required />
           </div>
+
+
           <div className="formgroup">
             <label for="text">Source of income</label>
             <input type="text"
@@ -62,36 +65,36 @@ const Template = () => {
             <p id="quest">What is your current employment status?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="employment"
+                value="full"
                 class="inputRadio"
-                check />Employed full-time
+                check required/>Employed full-time
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="employment"
+                value="part"
                 class="inputRadio"
                 check />Employed part-time
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="employment"
+                value="self"
                 class="inputRadio"
                 check/>Self Employed
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="employment"
+                value="unemployed"
                 class="inputRadio"
                 check />Unemployed, actively looking for work
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="employment"
+                value="bom"
                 class="inputRadio"
                 check />Unemployed, not currently looking for work
             </label>
@@ -101,36 +104,36 @@ const Template = () => {
             <p id="quest">What is your current monthly income?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="income"
+                value="less"
                 class="inputRadio"
-                check />Less than Rs. 20,000
+                check required/>Less than Rs. 20,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="income"
+                value="bet"
                 class="inputRadio"
                 check />Rs. 20,000 - Rs 40,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="income"
+                value="more"
                 class="inputRadio"
                 check/>Rs. 40,000 - Rs. 60,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="income"
+                value="morest"
                 class="inputRadio"
                 check />Rs. 60,000 - Rs. 80,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="income"
+                value="moreeee"
                 class="inputRadio"
                 check />Rs. 80,000 or more
             </label>
@@ -140,36 +143,36 @@ const Template = () => {
             <p id="quest">Have you experienced any changes in your income or financial situation in the past year</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="changes"
+                value="slight"
                 class="inputRadio"
-                check />Slight improvement
+                check required />Slight improvement
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="changes"
+                value="significant"
                 class="inputRadio"
                 check />Significant improvement
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="changes"
+                value="slightd"
                 class="inputRadio"
                 check/>Slight decline
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="changes"
+                value="moderate"
                 class="inputRadio"
                 check />Moderate decline
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="changes"
+                value="significantd"
                 class="inputRadio"
                 check />Significant decline
             </label>
@@ -179,36 +182,29 @@ const Template = () => {
             <p id="quest">Have you had to make any significant financial sacrifices in the past year?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="sacrifice"
+                value="no"
                 class="inputRadio"
-                check />No, I have not had to make any significant financial sacrifices
+                check required/>No, I have not had to make any significant financial sacrifices
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="sacrifice"
+                value="yes"
                 class="inputRadio"
                 check />Yes, I have had to cut back on discretionary spending
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="sacrifice"
+                value="yesmajor"
                 class="inputRadio"
                 check/>Yes, I have had to postpone major purchases or investments
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
-                class="inputRadio"
-                check />Moderate decline
-            </label>
-            <label for="">
-              <input type="radio"
-                name="prefer"
-                value="other"
+                name="sacrifice"
+                value="yesyes"
                 class="inputRadio"
                 check />Yes, I have had to dip into savings or take on debt to make ends meet
             </label>
@@ -218,36 +214,36 @@ const Template = () => {
             <p id="quest">How confident do you feel about your financial future?</p>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="natural"
+                name="confidence"
+                value="very"
                 class="inputRadio"
-                check />Very confident
+                check required/>Very confident
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="lpg-gas"
+                name="confidence"
+                value="somewhat"
                 class="inputRadio"
                 check />Somewhat confident
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="wood"
+                name="confidence"
+                value="neutral"
                 class="inputRadio"
                 check/>Neutral
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="induction"
+                name="confidence"
+                value="suncertain"
                 class="inputRadio"
                 check />Somewhat uncertain
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
-                value="other"
+                name="confidence"
+                value="vuncertain"
                 class="inputRadio"
                 check />Very Uncertain
             </label>

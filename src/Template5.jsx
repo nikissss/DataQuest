@@ -43,28 +43,28 @@ const Template5 = () => {
               <p id="quest"> What is your highest level of education?</p>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="education"
                   value="natural"
                   class="inputRadio"
-                  check />High School
+                  check required/>High School
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="education"
                   value="lpg-gas"
                   class="inputRadio"
                   check />Bachelor's Degree
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="education"
                   value="wood"
                   class="inputRadio"
                   check/>Master's Degree
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="education"
                   value="induction"
                   class="inputRadio"
                   check />Higher
@@ -75,14 +75,14 @@ const Template5 = () => {
               <p id="quest">What did you study?</p>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="study"
                   value="natural"
                   class="inputRadio"
-                  check />Science
+                  check required/>Science
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="study"
                   value="lpg-gas"
                   class="inputRadio"
                   check />Engineering
@@ -90,14 +90,14 @@ const Template5 = () => {
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="study"
                   value="wood"
                   class="inputRadio"
                   check/>Arts
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="study"
                   value="induction"
                   class="inputRadio"
                   check />Business
@@ -108,28 +108,28 @@ const Template5 = () => {
               <p id="quest">Did you attend a public or private institution?</p>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="attend"
                   value="natural"
                   class="inputRadio"
-                  check />Public
+                  check required/>Public
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="attend"
                   value="lpg-gas"
                   class="inputRadio"
                   check />Private
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="attend"
                   value="wood"
                   class="inputRadio"
                   check/>Both
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="attend"
                   value="induction"
                   class="inputRadio"
                   check />Neither
@@ -140,21 +140,21 @@ const Template5 = () => {
               <p id="quest">Did you receive any financial aid or scholarships?</p>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="receive"
                   value="natural"
                   class="inputRadio"
-                  check />Yes
+                  check required/>Yes
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="receive"
                   value="lpg-gas"
                   class="inputRadio"
                   check />No
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="receive"
                   value="wood"
                   class="inputRadio"
                   check/>Unsure
@@ -165,35 +165,35 @@ const Template5 = () => {
               <p id="quest">How much did you pay for you education</p>
               <label for="">
               <input type="radio"
-                name="prefer"
+                name="pay"
                 value="natural"
                 class="inputRadio"
-                check />Less than Rs. 200,000
+                check required />Less than Rs. 200,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
+                name="pay"
                 value="lpg-gas"
                 class="inputRadio"
                 check />Rs. 200,000 - Rs 400,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
+                name="pay"
                 value="wood"
                 class="inputRadio"
                 check/>Rs. 400,000 - Rs. 600,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
+                name="pay"
                 value="induction"
                 class="inputRadio"
                 check />Rs. 600,000 - Rs. 800,000
             </label>
             <label for="">
               <input type="radio"
-                name="prefer"
+                name="pay"
                 value="other"
                 class="inputRadio"
                 check />Rs. 800,000 or more
@@ -206,14 +206,14 @@ const Template5 = () => {
               <p id="quest">How long did it take you to complete your education?</p>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="time"
                   value="natural"
                   class="inputRadio"
-                  check />2 years or less
+                  check required/>2 years or less
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="time"
                   value="lpg-gas"
                   class="inputRadio"
                   check />2-4 years
@@ -221,7 +221,7 @@ const Template5 = () => {
               </label>
               <label for="">
                 <input type="radio"
-                  name="prefer"
+                  name="time"
                   value="wood"
                   class="inputRadio"
                   check/>4-6 years

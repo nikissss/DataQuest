@@ -54,29 +54,29 @@ const Template3 = () =>{
               <p id="quest">How did you get interested in coding?</p>  
               <label for="">
                 <input type="radio"
-                name="source"
-                value="friends"
+                name="interested"
+                value="school"
                 class="inputRadio"
-                check />Through a school or university course
+                check required />Through a school or university course
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="tv-ads"
+                name="interested"
+                value="friend"
                 class="inputRadio"
                 check />Through a friend or family member who codes
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="socialmedia"
+                name="interested"
+                value="online"
                 class="inputRadio"
                 check />Through an online tutorial or coding platform
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="newspapers"
+                name="interested"
+                value="self"
                 class="inputRadio"
                 check />Through self-exploration and curiosity
               </label>
@@ -86,29 +86,29 @@ const Template3 = () =>{
               <p id="quest">Which coding language do you prefer to work with?</p>  
               <label for="">
                 <input type="radio"
-                name="source"
-                value="friends"
+                name="language"
+                value="python"
                 class="inputRadio"
-                check />Python
+                check required/>Python
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="tv-ads"
+                name="language"
+                value="java"
                 class="inputRadio"
                 check />Java
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="socialmedia"
+                name="language"
+                value="javascript"
                 class="inputRadio"
                 check />Javascript
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="newspapers"
+                name="language"
+                value="other"
                 class="inputRadio"
                 check />Other
               </label>
@@ -118,29 +118,29 @@ const Template3 = () =>{
               <p id="quest">How do you stay up-to-date with the latest coding trends and technologies?</p>  
               <label for="">
                 <input type="radio"
-                name="source"
-                value="friends"
+                name="latest"
+                value="attend"
                 class="inputRadio"
-                check />Attend conferences or meetups
+                check required/>Attend conferences or meetups
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="tv-ads"
+                name="latest"
+                value="read"
                 class="inputRadio"
                 check /> Read technical blogs or articles
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="socialmedia"
+                name="attend"
+                value="follow"
                 class="inputRadio"
                 check />Follow industry leaders on social media
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="newspapers"
+                name="attend"
+                value="experiment"
                 class="inputRadio"
                 check />Experiment with new technologies on personal projects
               </label>
@@ -150,29 +150,29 @@ const Template3 = () =>{
               <p id="quest">How do you approach problem-solving when coding?</p>  
               <label for="">
                 <input type="radio"
-                name="source"
-                value="friends"
+                name="approach"
+                value="break"
                 class="inputRadio"
-                check />Break the problem down into smaller parts and tackle each one separately
+                check required/>Break the problem down into smaller parts and tackle each one separately
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="tv-ads"
+                name="approach"
+                value="search"
                 class="inputRadio"
                 check /> Search for solutions online or in coding forums
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="socialmedia"
+                name="approach"
+                value="collab"
                 class="inputRadio"
                 check /> Collaborate with other developers or colleagues for input
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="newspapers"
+                name="approach"
+                value="try"
                 class="inputRadio"
                 check />Try different approaches until a solution is found
               </label>
@@ -182,30 +182,30 @@ const Template3 = () =>{
               <p id="quest">How do you manage your time when working on a coding project?</p>  
               <label for="">
                 <input type="radio"
-                name="source"
-                value="friends"
+                name="time"
+                value="strict"
                 class="inputRadio"
-                check />Set strict deadlines for each task and stick to them
+                check required/>Set strict deadlines for each task and stick to them
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="tv-ads"
+                name="time"
+                value="tasks"
                 class="inputRadio"
                 check />Work on tasks as they come up, without a strict schedule
 
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="socialmedia"
+                name="time"
+                value="imp"
                 class="inputRadio"
                 check />Prioritize tasks based on importance and urgency
               </label>
               <label for="">
                 <input type="radio"
-                name="source"
-                value="newspapers"
+                name="time"
+                value="break"
                 class="inputRadio"
                 check />Break up work into manageable chunks and take breaks as needed
               </label>
@@ -220,7 +220,7 @@ const Template3 = () =>{
                     name="prefer"
                     value="back-end-dev"
                     class="checkbox"
-                    check />Back-End-Development
+                    check required />Back-End-Development
                   </label>
                   <label for="">
                     <input type="checkbox"
@@ -256,29 +256,29 @@ const Template3 = () =>{
                 <p id="quest">What advice would you give to someone just starting out in coding?</p>
                 <label for="">
                     <input type="checkbox"
-                    name="prefer"
-                    value="back-end-dev"
+                    name="advice"
+                    value="basic"
                     class="checkbox"
-                    check />Start with a basic coding language, like Python or HTML/CSS
+                    check required/>Start with a basic coding language, like Python or HTML/CSS
                   </label>
                   <label for="">
                     <input type="checkbox"
-                    name="prefer"
-                    value="front-end-dev"
+                    name="advice"
+                    value="join"
                     class="checkbox"
                     check/>Join a coding community or forum for support and advice
                   </label>
                   <label for="">
                     <input type="checkbox"
-                    name="prefer"
-                    value="app-dev"
+                    name="advice"
+                    value="question"
                     class="checkbox"
                     check />Don't be afraid to ask questions or make mistakes
                   </label>
                   <label for="">
                     <input type="checkbox"
-                    name="prefer"
-                    value="software-engineering"
+                    name="advice"
+                    value="experiment"
                     class="checkbox"
                     check />Experiment with personal projects to explore your interests and learn new skills.
                   </label>
