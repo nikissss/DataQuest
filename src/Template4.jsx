@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState }from "react";
+import axios from "axios";
 import "./Template.css";
 import {
   FacebookShareButton,
@@ -8,7 +9,57 @@ import {
 } from "react-share";
 
 const Template4 = () => {
-  const shareUrl="http://youtube.com";
+
+  const [formData, setFormData] = useState({
+    name:"",
+    email: "",
+    satisfied:"",
+    recommend:"",
+    rateQuality:"",
+    rateValueofMoney:"",
+    rateOverallCustomerService:"",
+    likelyToPurchaseAgain:"",
+
+});
+
+const handleInputChange = (event) => {
+  const { name, value, type } = event.target;
+
+  if (type === 'select-one') {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  } else if (type === 'radio') {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  } else {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+};
+
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  axios
+    .post("http://localhost:5000/submit-form4", formData)
+    .then((response) => {
+      console.log(response.data);
+      alert("Form Submitted");
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Form submission failed.");
+    });
+};
+
+const shareUrl = window.location.href;
+
   return (
     <>
 
@@ -21,13 +72,14 @@ const Template4 = () => {
             Customer Satisfaction
           </p>
         </header>
-        <form action="" id="surveyform">
+        <form onSubmit={handleSubmit} action="" id="surveyform">
 
           <div className="formgroup">
             <label for="name">Name</label>
             <input type="text"
               name="name" id="name"
               class="formcontrol"
+              onChange={handleInputChange}
               placeholder="enter your name" required />
           </div>
 
@@ -36,6 +88,7 @@ const Template4 = () => {
                 <input type="email"
                 name="email"s id="email"
                 class="formcontrol"
+                onChange={handleInputChange}
                 placeholder="Enter your email" required />
             </div>
 
@@ -46,6 +99,7 @@ const Template4 = () => {
                 name="satisfied"
                 value="very"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required/>Very satisfied
             </label>
             <label for="">
@@ -53,6 +107,7 @@ const Template4 = () => {
                 name="satisfied"
                 value="mid"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Satisfied
             </label>
             <label for="">
@@ -60,6 +115,7 @@ const Template4 = () => {
                 name="satisfied"
                 value="neutral"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Neutral
             </label>
             <label for="">
@@ -67,6 +123,7 @@ const Template4 = () => {
                 name="satisfied"
                 value="diss"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Dissatisfied
             </label>
             <label for="">
@@ -74,6 +131,7 @@ const Template4 = () => {
                 name="satisfied"
                 value="noo"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Very Dissatisfied
             </label>
           </div>
@@ -85,6 +143,7 @@ const Template4 = () => {
                 name="recommend"
                 value="very"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required/>Very Likely
             </label>
             <label for="">
@@ -92,6 +151,7 @@ const Template4 = () => {
                 name="recommend"
                 value="likely"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Likely
 
             </label>
@@ -100,6 +160,7 @@ const Template4 = () => {
                 name="recommend"
                 value="neutral"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Neutral
             </label>
             <label for="">
@@ -107,6 +168,7 @@ const Template4 = () => {
                 name="recommend"
                 value="unlikely"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Unlikely
             </label>
             <label for="">
@@ -114,6 +176,7 @@ const Template4 = () => {
                 name="recommend"
                 value="veryun"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Very unlikely
             </label>
           </div>
@@ -122,37 +185,42 @@ const Template4 = () => {
             <p id="quest">How would you rate the quality of our product/service?</p>
             <label for="">
               <input type="radio"
-                name="rate1"
+                name="rateQuality"
                 value="exce"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required />Excellent
             </label>
             <label for="">
               <input type="radio"
-                name="rate1"
+                name="rateQuality"
                 value="good"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Good
             </label>
             <label for="">
               <input type="radio"
-                name="rate1"
+                name="rateQuality"
                 value="avg"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Average
             </label>
             <label for="">
               <input type="radio"
-                name="rate1"
+                name="rateQuality"
                 value="poor"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Poor
             </label>
             <label for="">
               <input type="radio"
-                name="rate1"
+                name="rateQuality"
                 value="very"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Very poor
             </label>
           </div>
@@ -161,37 +229,42 @@ const Template4 = () => {
             <p id="quest">How would you rate the value for money of our product/service?</p>
             <label for="">
               <input type="radio"
-                name="rate2"
+                name="rateValueofMoney"
                 value="exce"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required/>Excellent
             </label>
             <label for="">
               <input type="radio"
-                name="rate2"
+                name="rateValueofMoney"
                 value="good"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Good
             </label>
             <label for="">
               <input type="radio"
-                name="rate2"
+                name="rateValueofMoney"
                 value="avg"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Average
             </label>
             <label for="">
               <input type="radio"
-                name="rate2"
+                name="rateValueofMoney"
                 value="poor"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Poor
             </label>
             <label for="">
               <input type="radio"
-                name="rate2"
+                name="rateValueofMoney"
                 value="very"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Very poor
             </label>
           </div>
@@ -200,37 +273,42 @@ const Template4 = () => {
             <p id="quest">How would you rate the overall customer service exxperience?</p>
             <label for="">
               <input type="radio"
-                name="rate3"
+                name="rateOverallCustomerService"
                 value="exce"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required/>Excellent
             </label>
             <label for="">
               <input type="radio"
-                name="rate3"
+                name="rateOverallCustomerService"
                 value="good"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Good
             </label>
             <label for="">
               <input type="radio"
-                name="rate3"
+                name="rateOverallCustomerService"
                 value="avg"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Average
             </label>
             <label for="">
               <input type="radio"
-                name="rate3"
+                name="rateOverallCustomerService"
                 value="poor"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Poor
             </label>
             <label for="">
               <input type="radio"
-                name="rate3"
+                name="rateOverallCustomerService"
                 value="very"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Very poor
             </label>
           </div>
@@ -240,38 +318,43 @@ const Template4 = () => {
             <p id="quest">How likely are you to purchase from us again?</p>
             <label for="">
               <input type="radio"
-                name="likely"
+                name="likelyToPurchaseAgain"
                 value="very"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required/>Very Likely
             </label>
             <label for="">
               <input type="radio"
-                name="likely"
+                name="likelyToPurchaseAgain"
                 value="mid"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Likely
 
             </label>
             <label for="">
               <input type="radio"
-                name="likely"
+                name="likelyToPurchaseAgain"
                 value="neutral"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Neutral
             </label>
             <label for="">
               <input type="radio"
-                name="likely"
+                name="likelyToPurchaseAgain"
                 value="unlikely"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Unlikely
             </label>
             <label for="">
               <input type="radio"
-                name="likely"
+                name="likelyToPurchaseAgain"
                 value="veryun"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Very unlikely
             </label>
           </div>
@@ -283,12 +366,14 @@ const Template4 = () => {
           </div>
         </form>
 
-        <FacebookShareButton url={shareUrl} quote={"Title"}>
-          <FacebookIcon size={40}/>
-        </FacebookShareButton>
-        <FacebookMessengerShareButton url={shareUrl}>
-          <FacebookMessengerIcon size={40}/>
-        </FacebookMessengerShareButton>
+        <div className="shareBtns">
+          <FacebookShareButton url={shareUrl}>
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <FacebookMessengerShareButton url={shareUrl}>
+            <FacebookMessengerIcon size={32} round />
+          </FacebookMessengerShareButton>
+        </div>
       </div>
     </>
   );

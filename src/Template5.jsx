@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState }from "react";
+import axios from "axios";
  import "./Template.css";
  import {
   FacebookShareButton,
@@ -8,7 +9,57 @@ import React from "react";
 } from "react-share";
 
 const Template5 = () => {
-    const shareUrl="http://youtube.com";
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email:"",
+    education: "",
+    faculty: "",
+    institute: "",
+    receiveFinancialaid: "",
+    totalpay: "",
+    timetakentoComplete: "",
+
+});
+
+const handleInputChange = (event) => {
+  const { name, value, type } = event.target;
+
+  if (type === 'select-one') {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  } else if (type === 'radio') {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  } else {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+};
+
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  axios
+    .post("http://localhost:5000/submit-form5", formData)
+    .then((response) => {
+      console.log(response.data);
+      alert("Form Submitted");
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Form submission failed.");
+    });
+};
+
+const shareUrl = window.location.href;
+
     return (
       <>
   
@@ -21,13 +72,14 @@ const Template5 = () => {
               Education
             </p>
           </header>
-          <form action="" id="surveyform">
+          <form onSubmit={handleSubmit} action="" id="surveyform">
   
             <div className="formgroup">
               <label for="name">Name</label>
               <input type="text"
                 name="name" id="name"
                 class="formcontrol"
+                onChange={handleInputChange}
                 placeholder="enter your name" required />
             </div>
   
@@ -36,6 +88,7 @@ const Template5 = () => {
                   <input type="email"
                   name="email"s id="email"
                   class="formcontrol"
+                  onChange={handleInputChange}
                   placeholder="Enter your email" required />
               </div>
   
@@ -46,6 +99,7 @@ const Template5 = () => {
                   name="education"
                   value="natural"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check required/>High School
               </label>
               <label for="">
@@ -53,6 +107,7 @@ const Template5 = () => {
                   name="education"
                   value="lpg-gas"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />Bachelor's Degree
               </label>
               <label for="">
@@ -60,6 +115,7 @@ const Template5 = () => {
                   name="education"
                   value="wood"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check/>Master's Degree
               </label>
               <label for="">
@@ -67,6 +123,7 @@ const Template5 = () => {
                   name="education"
                   value="induction"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />Higher
               </label>
             </div>
@@ -75,31 +132,35 @@ const Template5 = () => {
               <p id="quest">What did you study?</p>
               <label for="">
                 <input type="radio"
-                  name="study"
+                  name="faculty"
                   value="natural"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check required/>Science
               </label>
               <label for="">
                 <input type="radio"
-                  name="study"
+                  name="faculty"
                   value="lpg-gas"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />Engineering
   
               </label>
               <label for="">
                 <input type="radio"
-                  name="study"
+                  name="faculty"
                   value="wood"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check/>Arts
               </label>
               <label for="">
                 <input type="radio"
-                  name="study"
+                  name="faculty"
                   value="induction"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />Business
               </label>
             </div>
@@ -108,30 +169,34 @@ const Template5 = () => {
               <p id="quest">Did you attend a public or private institution?</p>
               <label for="">
                 <input type="radio"
-                  name="attend"
+                  name="institute"
                   value="natural"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check required/>Public
               </label>
               <label for="">
                 <input type="radio"
-                  name="attend"
+                  name="institute"
                   value="lpg-gas"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />Private
               </label>
               <label for="">
                 <input type="radio"
-                  name="attend"
+                  name="institute"
                   value="wood"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check/>Both
               </label>
               <label for="">
                 <input type="radio"
-                  name="attend"
+                  name="institute"
                   value="induction"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />Neither
               </label>
             </div>
@@ -140,23 +205,26 @@ const Template5 = () => {
               <p id="quest">Did you receive any financial aid or scholarships?</p>
               <label for="">
                 <input type="radio"
-                  name="receive"
+                  name="receiveFinancialaid"
                   value="natural"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check required/>Yes
               </label>
               <label for="">
                 <input type="radio"
-                  name="receive"
+                  name="receiveFinancialaid"
                   value="lpg-gas"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />No
               </label>
               <label for="">
                 <input type="radio"
-                  name="receive"
+                  name="receiveFinancialaid"
                   value="wood"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check/>Unsure
               </label>
             </div>
@@ -165,37 +233,42 @@ const Template5 = () => {
               <p id="quest">How much did you pay for you education</p>
               <label for="">
               <input type="radio"
-                name="pay"
+                name="totalpay"
                 value="natural"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check required />Less than Rs. 200,000
             </label>
             <label for="">
               <input type="radio"
-                name="pay"
+                name="totalpay"
                 value="lpg-gas"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Rs. 200,000 - Rs 400,000
             </label>
             <label for="">
               <input type="radio"
-                name="pay"
+                name="totalpay"
                 value="wood"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check/>Rs. 400,000 - Rs. 600,000
             </label>
             <label for="">
               <input type="radio"
-                name="pay"
+                name="totalpay"
                 value="induction"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Rs. 600,000 - Rs. 800,000
             </label>
             <label for="">
               <input type="radio"
-                name="pay"
+                name="totalpay"
                 value="other"
                 class="inputRadio"
+                onChange={handleInputChange}
                 check />Rs. 800,000 or more
             </label>
           </div>
@@ -206,24 +279,27 @@ const Template5 = () => {
               <p id="quest">How long did it take you to complete your education?</p>
               <label for="">
                 <input type="radio"
-                  name="time"
+                  name="timetakentoComplete"
                   value="natural"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check required/>2 years or less
               </label>
               <label for="">
                 <input type="radio"
-                  name="time"
+                  name="timetakentoComplete"
                   value="lpg-gas"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check />2-4 years
   
               </label>
               <label for="">
                 <input type="radio"
-                  name="time"
+                  name="timetakentoComplete"
                   value="wood"
                   class="inputRadio"
+                  onChange={handleInputChange}
                   check/>4-6 years
               </label>
             </div>
@@ -235,12 +311,14 @@ const Template5 = () => {
             </div>
           </form>
   
-          <FacebookShareButton url={shareUrl} quote={"Title"}>
-            <FacebookIcon size={40}/>
+          <div className="shareBtns">
+          <FacebookShareButton url={shareUrl}>
+            <FacebookIcon size={32} round />
           </FacebookShareButton>
           <FacebookMessengerShareButton url={shareUrl}>
-            <FacebookMessengerIcon size={40}/>
+            <FacebookMessengerIcon size={32} round />
           </FacebookMessengerShareButton>
+        </div>
         </div>
       </>
     );

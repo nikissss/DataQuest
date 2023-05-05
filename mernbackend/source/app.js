@@ -84,57 +84,156 @@ app.post("/api/login", (req, res) => {
     });
 });
 
-
 //new Schema for template1
 const temp1Schema = new mongoose.Schema({
-  name:String,
-    nooffamily:String,
-    sourceofincome:String,
-    employmentStatus:String,
-    monthlyIncome:String,
-    changesinincome:String,
-    sacrifice:String,
-    confidence:String,  
+  name: { type: String, required: true },
+  familyMembers: { type: Number, required: true },
+  employmentStatus: { type: String, required: true },
+  sourceofincome: { type: String, required: true },
+  role: { type: String, required: true },
+  income: { type: String, required: true },
+  changesinincome: { type: String, required: true },
+  sacrifice: { type: String, required: true },
+  confidence: { type: String, required: true }, 
 });
 
 // create a model for the template1 data
 const temp1 = mongoose.model("temp1", temp1Schema);
 
 // handle POST requests to /submit-from1
-app.post('/submit-form1', (req, res) => {
-  const name = req.body.name;
-  const nooffamily = req.body.family;
-  const sourceofincome = req.body.source;
-  const employmentStatus = req.body.employment;
-  const monthlyIncome = req.body.income;
-  const changesinincome= req.body.changes;
-  const sacrifice= req.body.sacrifice;
-  const confidence= req.body.confidence;
-
-  res.send('Form submitted successfully');
-  // create a new temp1 object
-  const newTemp1 = new temp1({
-    name,
-    nooffamily,
-    sourceofincome,
-    employmentStatus,
-    monthlyIncome,
-    changesinincome,
-    sacrifice,
-    confidence,
- });
-
- // save the new temp1 object to the database
-  newTemp1.save()
-  .then(() => {
-    res.send("Form submitted successfully");
-  })
-  .catch((err) => {
-    console.log(err);
-    res.status(500).send("Error submitting form");
-  });
+app.post('/submit-form1', async (req, res) => {
+  try {
+    const formData = req.body;
+    console.log(formData);
+    const newTemp1 = new temp1(formData);
+    await newTemp1.save();
+    res.send('Data saved successfully');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Error while saving data. Please try again later.');
+  }
 });
 
+//new Schema for template2
+const temp2Schema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: {type:String, required: true},
+  role: { type: String, required: true },
+  source: { type: String, required: true },
+  preferabletreatment: { type: String, required: true },
+  feelingsofsadness: { type: String, required: true },
+  changesinappetite: { type: String, required: true },
+  panicAttack: { type: String, required: true },
+  suicidalthoughts: { type: String, required: true },
+  supportSystem: { type: String, required: true }, 
+  professionalHelp: { type: String, required: true },
+});
+
+// create a model for the template2 data
+const temp2 = mongoose.model("temp2", temp2Schema);
+
+// handle POST requests to /submit-from2
+app.post('/submit-form2', async (req, res) => {
+  try {
+    const formData = req.body;
+    console.log(formData);
+    const newTemp2 = new temp2(formData);
+    await newTemp2.save();
+    res.send('Data saved successfully');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Error while saving data. Please try again later.');
+  }
+});
+
+//new Schema for template3
+const temp3Schema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: {type:String, required: true},
+  role: { type: String, required: true },
+  interestedinCoding: { type: String, required: true },
+  preferablecodinglanguage: { type: String, required: true },
+  uptodateby: { type: String, required: true },
+  approachproblem: { type: String, required: true },
+  managingtime: { type: String, required: true },
+  LikeToSeeImproved: { type: String, required: true },
+  advice: { type: String, required: true }, 
+});
+
+// create a model for the template3 data
+const temp3 = mongoose.model("temp3", temp3Schema);
+
+// handle POST requests to /submit-from1
+app.post('/submit-form3', async (req, res) => {
+  try {
+    const formData = req.body;
+    console.log(formData);
+    const newTemp3 = new temp3(formData);
+    await newTemp3.save();
+    res.send('Data saved successfully');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Error while saving data. Please try again later.');
+  }
+});
+
+//new Schema for template4
+const temp4Schema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: {type:String, required: true},
+  satisfied: { type: String, required: true },
+  recommend: { type: String, required: true },
+  rateQuality: { type: String, required: true },
+  rateValueofMoney: { type: String, required: true },
+  rateOverallCustomerService: { type: String, required: true },
+  likelyToPurchaseAgain: { type: String, required: true },
+});
+
+// create a model for the template4 data
+const temp4 = mongoose.model("temp4", temp4Schema);
+
+// handle POST requests to /submit-from4
+app.post('/submit-form4', async (req, res) => {
+  try {
+    const formData = req.body;
+    console.log(formData);
+    const newTemp4 = new temp4(formData);
+    await newTemp4.save();
+    res.send('Data saved successfully');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Error while saving data. Please try again later.');
+  }
+});
+
+//new Schema for template5
+const temp5Schema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: {type:String, required: true},
+  education: { type: String, required: true },
+  faculty: { type: String, required: true },
+  institute: { type: String, required: true },
+  receiveFinancialaid: { type: String, required: true },
+  totalpay: { type: String, required: true },
+  timetakentoComplete: { type: String, required: true },
+});
+
+// create a model for the template5 data
+const temp5 = mongoose.model("temp5", temp5Schema);
+
+// handle POST requests to /submit-from5
+app.post('/submit-form5', async (req, res) => {
+  try {
+    const formData = req.body;
+    console.log(formData);
+    const newTemp5 = new temp5(formData);
+    await newTemp5.save();
+    res.send('Data saved successfully');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Error while saving data. Please try again later.');
+  }
+});
 
 
 app.listen(port, () => {
