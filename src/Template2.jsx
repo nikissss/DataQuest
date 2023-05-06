@@ -101,10 +101,10 @@ const Template2 =() =>{
                 <p id="quest">Which of these do you experience most?</p>
                 <select name="role" id="dropdown" class="formcontrol" required onChange={handleInputChange}>
                 <option value="" disabled selected>Select current condition</option>
-                <option value="student">Anxiety</option>
-                <option value="teacher">Depression</option>
-                <option value="job">Mood Swings</option>
-                <option value="othert">Other</option>
+                <option value="Anxiety">Anxiety</option>
+                <option value="Depression">Depression</option>
+                <option value="Mood Swings">Mood Swings</option>
+                <option value="other">Other</option>
                 </select>
             </div>
 
@@ -114,7 +114,7 @@ const Template2 =() =>{
               <label for="">
                 <input type="radio"
                 name="source"
-                value="friends"
+                value="Friends"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>friends
@@ -122,7 +122,7 @@ const Template2 =() =>{
               <label for="">
                 <input type="radio"
                 name="source"
-                value="tv-ads"
+                value="Tv-ads"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Tv-ads
@@ -130,7 +130,7 @@ const Template2 =() =>{
               <label for="">
                 <input type="radio"
                 name="source"
-                value="socialmedia"
+                value="Socialmedia"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Social media
@@ -138,7 +138,7 @@ const Template2 =() =>{
               <label for="">
                 <input type="radio"
                 name="source"
-                value="newspapers"
+                value="Newspapers"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Newspapers
@@ -146,7 +146,7 @@ const Template2 =() =>{
               <label for="">
                 <input type="radio"
                 name="source"
-                value="other"
+                value="Other"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Other
@@ -160,7 +160,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="preferabletreatment"
-                    value="consultation"
+                    value="Consultation"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>Consultation
@@ -168,7 +168,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="preferabletreatment"
-                    value="therapy"
+                    value="Therapy"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Therapy
@@ -176,7 +176,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="preferabletreatment"
-                    value="medication"
+                    value="Medication"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Medication
@@ -184,7 +184,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="preferabletreatment"
-                    value="other"
+                    value="Other"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Other
@@ -196,7 +196,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="feelingsofsadness"
-                    value="null"
+                    value="No, not at all"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>Not at all
@@ -204,7 +204,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="feelingsofsadness"
-                    value="rarely"
+                    value="Rarely"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Rarely
@@ -212,7 +212,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="feelingsofsadness"
-                    value="occasionally"
+                    value="Occasionally"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Occasionally
@@ -220,7 +220,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="feelingsofsadness"
-                    value="frequently"
+                    value="Frequently"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Frequently
@@ -228,7 +228,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="feelingsofsadness"
-                    value="almost"
+                    value="Almost constantly"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Almost constantly
@@ -240,7 +240,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="changesinappetite"
-                    value="no"
+                    value="No changes"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>No changes
@@ -248,7 +248,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="changesinappetite"
-                    value="alikati"
+                    value="Slight changes"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Slight changes
@@ -256,7 +256,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="changesinappetite"
-                    value="halka"
+                    value="Moderate changes"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Moderate changes
@@ -264,7 +264,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="changesinappetite"
-                    value="derai"
+                    value="Significant changes"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Significant Changes
@@ -276,7 +276,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="panicAttack"
-                    value="chaina"
+                    value="No, never"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>No, never
@@ -284,7 +284,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="panicAttack"
-                    value="ekchati"
+                    value="Yes, but only once"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, but only once
@@ -292,7 +292,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="panicAttack"
-                    value="kailekai"
+                    value="Yes, a few times"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, a few times
@@ -300,7 +300,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="panicAttack"
-                    value="derai"
+                    value="Yes, frequently"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, frequently
@@ -312,7 +312,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="suicidalthoughts"
-                    value="no"
+                    value="No, never"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>No, never
@@ -320,7 +320,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="suicidalthoughts"
-                    value="ekchati"
+                    value="Yes, but only once"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, but only once
@@ -328,7 +328,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="suicidalthoughts"
-                    value="kailekai"
+                    value="Yes, a few times"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, a few times
@@ -336,7 +336,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="suicidalthoughts"
-                    value="derai"
+                    value="Yes, frequently"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, frequently
@@ -348,7 +348,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="supportSystem"
-                    value="no"
+                    value="No, I don't have a support system"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>No, I don't have a support system
@@ -356,7 +356,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="supportSystem"
-                    value="yesnocomfy"
+                    value="Yes, but I don't feel comfortable talking to them"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, but I don't feel comfortable talking to them
@@ -364,7 +364,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="supportSystem"
-                    value="yesalilcomfy"
+                    value="Yes, and I feel somewhat comfortable talking to them"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, and I feel somewhat comfortable talking to them
@@ -372,7 +372,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="supportSystem"
-                    value="yescomfy"
+                    value="Yes, and I feel very comfortable talking to them"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Yes, and I feel very comfortable talking to them
@@ -384,7 +384,7 @@ const Template2 =() =>{
                 <label for="">
                     <input type="radio"
                     name="professionalHelp"
-                    value="no"
+                    value="Not at all"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>Not at all
@@ -392,7 +392,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="professionalHelp"
-                    value="rarely"
+                    value="Rarely"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Rarely
@@ -400,7 +400,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="professionalHelp"
-                    value="occasionally"
+                    value="Occasionally"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Occasionally
@@ -408,7 +408,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="professionalHelp"
-                    value="frequently"
+                    value="Frequently"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Frequently
@@ -416,7 +416,7 @@ const Template2 =() =>{
                   <label for="">
                     <input type="radio"
                     name="professionalHelp"
-                    value="constant"
+                    value="Almost constantly"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Almost constantly

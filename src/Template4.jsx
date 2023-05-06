@@ -97,7 +97,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="satisfied"
-                value="very"
+                value="Very satisfied"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Very satisfied
@@ -105,7 +105,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="satisfied"
-                value="mid"
+                value="Satisfied"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Satisfied
@@ -113,7 +113,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="satisfied"
-                value="neutral"
+                value="Neutral"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check/>Neutral
@@ -121,7 +121,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="satisfied"
-                value="diss"
+                value="Dissatisfied"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Dissatisfied
@@ -129,7 +129,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="satisfied"
-                value="noo"
+                value="Very Dissatisfied"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Very Dissatisfied
@@ -141,7 +141,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="recommend"
-                value="very"
+                value="Very Likely"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Very Likely
@@ -149,7 +149,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="recommend"
-                value="likely"
+                value="Likely"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Likely
@@ -174,7 +174,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="recommend"
-                value="veryun"
+                value="Very unlikely"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Very unlikely
@@ -186,7 +186,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateQuality"
-                value="exce"
+                value="Excellent"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required />Excellent
@@ -194,7 +194,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateQuality"
-                value="good"
+                value="Good"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Good
@@ -202,7 +202,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateQuality"
-                value="avg"
+                value="Average"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check/>Average
@@ -210,7 +210,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateQuality"
-                value="poor"
+                value="Poor"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Poor
@@ -218,7 +218,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateQuality"
-                value="very"
+                value="Very poor"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Very poor
@@ -230,7 +230,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateValueofMoney"
-                value="exce"
+                value="Excellent"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Excellent
@@ -238,7 +238,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateValueofMoney"
-                value="good"
+                value="Good"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Good
@@ -246,7 +246,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateValueofMoney"
-                value="avg"
+                value="Average"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check/>Average
@@ -254,7 +254,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateValueofMoney"
-                value="poor"
+                value="Poor"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Poor
@@ -262,7 +262,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateValueofMoney"
-                value="very"
+                value="Very poor"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Very poor
@@ -274,7 +274,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateOverallCustomerService"
-                value="exce"
+                value="Excellent"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Excellent
@@ -282,7 +282,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateOverallCustomerService"
-                value="good"
+                value="Good"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Good
@@ -290,7 +290,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateOverallCustomerService"
-                value="avg"
+                value="Average"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check/>Average
@@ -298,7 +298,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateOverallCustomerService"
-                value="poor"
+                value="Poor"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Poor
@@ -306,7 +306,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="rateOverallCustomerService"
-                value="very"
+                value="very poor"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Very poor
@@ -319,7 +319,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="likelyToPurchaseAgain"
-                value="very"
+                value="very likely"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Very Likely
@@ -327,7 +327,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="likelyToPurchaseAgain"
-                value="mid"
+                value="likely"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Likely
@@ -352,7 +352,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="likelyToPurchaseAgain"
-                value="veryun"
+                value="very unlikely"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Very unlikely

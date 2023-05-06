@@ -99,7 +99,7 @@ const shareUrl = window.location.href;
                 <option value="" disabled selected>Select current role</option>
                 <option value="student">Student</option>
                 <option value="teacher">Teacher</option>
-                <option value="job">Freelancer</option>
+                <option value="Freelancer">Freelancer</option>
                 <option value="other">Other occupations</option>
                 </select>
             </div>
@@ -109,7 +109,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="interestedinCoding"
-                value="school"
+                value="Through a school or university course"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required />Through a school or university course
@@ -117,7 +117,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="interestedinCoding"
-                value="friend"
+                value="Through a friend or family member who codes"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Through a friend or family member who codes
@@ -125,7 +125,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="interestedinCoding"
-                value="online"
+                value="Through an online tutorial or coding platform"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Through an online tutorial or coding platform
@@ -133,7 +133,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="interestedinCoding"
-                value="self"
+                value="Through self-exploration and curiosity"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Through self-exploration and curiosity
@@ -181,7 +181,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="uptodateby"
-                value="attend"
+                value="Attend conferences or meetups"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Attend conferences or meetups
@@ -189,7 +189,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="uptodateby"
-                value="read"
+                value="Read technical blogs or articles"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check /> Read technical blogs or articles
@@ -197,7 +197,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="uptodateby"
-                value="follow"
+                value="Follow industry leaders on social media"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Follow industry leaders on social media
@@ -205,7 +205,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="uptodateby"
-                value="experiment"
+                value="Experiment with new technologies on personal projects"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Experiment with new technologies on personal projects
@@ -217,7 +217,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="approachproblem"
-                value="break"
+                value="Break the problem down into smaller parts and tackle each one separately"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Break the problem down into smaller parts and tackle each one separately
@@ -225,7 +225,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="approachproblem"
-                value="search"
+                value="Search for solutions online or in coding forums"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check /> Search for solutions online or in coding forums
@@ -233,7 +233,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="approachproblem"
-                value="collab"
+                value="Collaborate with other developers or colleagues for input"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check /> Collaborate with other developers or colleagues for input
@@ -241,7 +241,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="approachproblem"
-                value="try"
+                value="Try different approaches until a solution is found"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Try different approaches until a solution is found
@@ -253,7 +253,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="managingtime"
-                value="strict"
+                value="Set strict deadlines for each task and stick to them"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required/>Set strict deadlines for each task and stick to them
@@ -261,7 +261,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="managingtime"
-                value="tasks"
+                value="Work on tasks as they come up, without a strict schedule"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Work on tasks as they come up, without a strict schedule
@@ -270,7 +270,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="managingtime"
-                value="imp"
+                value="Prioritize tasks based on importance and urgency"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Prioritize tasks based on importance and urgency
@@ -278,7 +278,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                 name="managingtime"
-                value="break"
+                value="Break up work into manageable chunks and take breaks as needed"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Break up work into manageable chunks and take breaks as needed
@@ -336,7 +336,7 @@ const shareUrl = window.location.href;
                 <label for="">
                     <input type="radio"
                     name="advice"
-                    value="basic"
+                    value="Start with a basic coding language, like Python or HTML/CSS"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check required/>Start with a basic coding language, like Python or HTML/CSS
@@ -344,7 +344,7 @@ const shareUrl = window.location.href;
                   <label for="">
                     <input type="radio"
                     name="advice"
-                    value="join"
+                    value="Join a coding community or forum for support and advice"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check/>Join a coding community or forum for support and advice
@@ -352,7 +352,7 @@ const shareUrl = window.location.href;
                   <label for="">
                     <input type="radio"
                     name="advice"
-                    value="question"
+                    value="Don't be afraid to ask questions or make mistakes"
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Don't be afraid to ask questions or make mistakes
@@ -360,7 +360,7 @@ const shareUrl = window.location.href;
                   <label for="">
                     <input type="radio"
                     name="advice"
-                    value="experiment"
+                    value="Experiment with personal projects to explore your interests and learn new skills."
                     class="inputRadio"
                     onChange={handleInputChange}
                     check />Experiment with personal projects to explore your interests and learn new skills.

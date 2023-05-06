@@ -97,7 +97,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="education"
-                  value="natural"
+                  value="High School"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check required/>High School
@@ -105,7 +105,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="education"
-                  value="lpg-gas"
+                  value="Bachelor's Degree"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />Bachelor's Degree
@@ -113,7 +113,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="education"
-                  value="wood"
+                  value="Master's Degree"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check/>Master's Degree
@@ -121,7 +121,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="education"
-                  value="induction"
+                  value="Higher"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />Higher
@@ -133,7 +133,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="faculty"
-                  value="natural"
+                  value="Science"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check required/>Science
@@ -141,7 +141,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="faculty"
-                  value="lpg-gas"
+                  value="Engineering"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />Engineering
@@ -150,7 +150,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="faculty"
-                  value="wood"
+                  value="Arts"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check/>Arts
@@ -158,7 +158,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="faculty"
-                  value="induction"
+                  value="Business"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />Business
@@ -170,7 +170,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="institute"
-                  value="natural"
+                  value="Public"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check required/>Public
@@ -178,7 +178,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="institute"
-                  value="lpg-gas"
+                  value="Private"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />Private
@@ -186,7 +186,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="institute"
-                  value="wood"
+                  value="Both public and private"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check/>Both
@@ -194,7 +194,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="institute"
-                  value="induction"
+                  value="Neither"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />Neither
@@ -206,7 +206,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="receiveFinancialaid"
-                  value="natural"
+                  value="Yes"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check required/>Yes
@@ -214,7 +214,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="receiveFinancialaid"
-                  value="lpg-gas"
+                  value="No"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />No
@@ -222,7 +222,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="receiveFinancialaid"
-                  value="wood"
+                  value="Unsure"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check/>Unsure
@@ -234,7 +234,7 @@ const shareUrl = window.location.href;
               <label for="">
               <input type="radio"
                 name="totalpay"
-                value="natural"
+                value="<200k"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check required />Less than Rs. 200,000
@@ -242,7 +242,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="totalpay"
-                value="lpg-gas"
+                value="200k - 400k"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Rs. 200,000 - Rs 400,000
@@ -250,7 +250,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="totalpay"
-                value="wood"
+                value="400k - 600k"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check/>Rs. 400,000 - Rs. 600,000
@@ -258,7 +258,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="totalpay"
-                value="induction"
+                value="600k-800k"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Rs. 600,000 - Rs. 800,000
@@ -266,7 +266,7 @@ const shareUrl = window.location.href;
             <label for="">
               <input type="radio"
                 name="totalpay"
-                value="other"
+                value="800k+"
                 class="inputRadio"
                 onChange={handleInputChange}
                 check />Rs. 800,000 or more
@@ -280,7 +280,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="timetakentoComplete"
-                  value="natural"
+                  value="2 years or less"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check required/>2 years or less
@@ -288,7 +288,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="timetakentoComplete"
-                  value="lpg-gas"
+                  value="2-4 years"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check />2-4 years
@@ -297,7 +297,7 @@ const shareUrl = window.location.href;
               <label for="">
                 <input type="radio"
                   name="timetakentoComplete"
-                  value="wood"
+                  value="4-6 years"
                   class="inputRadio"
                   onChange={handleInputChange}
                   check/>4-6 years
