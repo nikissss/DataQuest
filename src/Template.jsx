@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Template.css";
+import { NavLink } from "react-router-dom";
 import {
   FacebookShareButton,
   FacebookMessengerShareButton,
@@ -340,16 +341,21 @@ const Template = () => {
       </form>
 
       <div className="share">
-        <h3>Share this form with others</h3>
-        <div className="shareBtns">
-          <FacebookShareButton url={shareUrl}>
-            <FacebookIcon size={32} round />
-          </FacebookShareButton>
-          <FacebookMessengerShareButton url={shareUrl}>
-            <FacebookMessengerIcon size={32} round />
-          </FacebookMessengerShareButton>
-        </div>
+            <h3>Share this form with others</h3>
+            <div className="shareBtns">
+              <FacebookShareButton url={shareUrl}>
+                <FacebookIcon size={32} round />
+              </FacebookShareButton>
+              <FacebookMessengerShareButton url={shareUrl}>
+                <FacebookMessengerIcon size={32} round />
+              </FacebookMessengerShareButton>
+            </div>
+          <div className="share">
+             <NavLink to="/service" className="button">Back</NavLink>
+          </div>
       </div>
+      <br/>
+      <br/>
     </div>
  
 
